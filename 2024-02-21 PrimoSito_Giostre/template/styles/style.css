@@ -1,0 +1,241 @@
+/* font */
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}  
+/* nostro css*/
+
+h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    color: #333;
+}
+
+/** header **/
+
+header {
+    background-color: #252525;
+    color: #ff0000;
+    background-image: url(/template/images/wallpaper.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-size: cover;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo img {
+    width: 15vh;
+}
+
+#menu ul {
+    background-color: #3d3d3d7b;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li {
+    margin-left: 12px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#menu a {
+    color: rgb(0, 182, 24);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: rgb(1, 236, 5);
+    transition: color 0.5s;
+    text-decoration: underline;
+}
+
+#FB {
+    padding: 10px;
+}
+
+#IG {
+    padding: 10px;
+}
+
+#X {
+    padding: 10px;
+}
+
+#social ul {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #D4D4D4;
+    color: #3D3D3D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #161616;
+    text-decoration: none;
+}
+
+footer > div {
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/** NOTIZIE **/
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #888;
+}
+
+.articles p {
+    font-size: 18px;
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articles a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(83, 83, 193);
+    border-radius: 2px;
+    transition: transform 0.3s;
+    will-change: transform;
+}
+
+.articles a:hover {
+    background-color: rgb(87, 87, 204);
+    color: #ffffff;
+    transform: scale(3);
+}
+.articles__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.articles article {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.articles img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/** form **/
+
+main.prenota {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.form-wrapper label {
+    width: 50%;
+    display: inline-block;
+    line-height: 2.2;
+}
+
+.form-wrapper div {
+    margin-bottom: 1rem;
+}
+
+.form-wrapper {
+    width: 500px;
+    margin: 2rem auto;
+}
+
+.form-wrapper input {
+    width: 47%;
+}
+
+.form-wrapper .align-column {
+    flex-direction: column;    
+}
+
+.form-wrapper input[type= "submit"] {
+    margin-left: 50%;
+}
+
+
+@media (min-width: 768px) {
+    #menu li {
+        display: inline;
+    }
+    header {
+        height: 120px;
+    }
+    .articles__wrapper {
+        display: inline-flex;
+    }
+
+    .homepage header {
+        height: 80vh;
+    }
+} /** @media è meglio che stia sempre per ultimo **/
